@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Added the `signal-prospect-research` plugin to the marketplace catalog.
+
 ### Changed
 
 - Corrected the repository architecture docs to reflect a catalog-only marketplace that points to external plugin repositories.

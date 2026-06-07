@@ -127,6 +127,7 @@ Categories are curation labels, not marketing copy.
 - Use `Engineering` for developer tooling, code workflows, CI, debugging, or technical automation.
 - Use `Productivity` for operational workflows, communication, task execution, or general business utility.
 - Use `Research` for investigation, synthesis, analysis, or information-gathering tools.
+- Use `Sales` for prospecting, pipeline, account research, buyer research, and go-to-market execution.
 
 If a plugin does not fit any current category, add a new category intentionally and keep the label plain.
 
