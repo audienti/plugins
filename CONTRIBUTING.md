@@ -4,18 +4,18 @@ This repository is a public Codex marketplace, not a dumping ground for future i
 
 ## Core rules
 
-- Only add plugins that actually exist in `plugins/`.
+- Only add plugins that actually exist in their own upstream repositories.
 - Do not add placeholder marketplace entries.
 - Keep `.agents/plugins/marketplace.json` valid JSON and structurally correct.
-- Keep plugin folder names and marketplace entry names exactly aligned.
-- Use local marketplace source paths in the form `./plugins/<plugin-name>`.
+- Use marketplace entries that point to public Git repositories with `source.source: "url"`.
+- Use repository URLs in the form `https://... .git`.
 - Update `CHANGELOG.md` for repository-visible changes.
 - Update `README.md` when repository structure or maintainer workflow changes.
 
 ## Before opening a pull request
 
 1. Run `python3 scripts/validate_marketplace.py`.
-2. Confirm every catalog entry points to a real plugin directory.
+2. Confirm every catalog entry points to a real upstream plugin repository.
 3. Confirm there are no stale or future-facing plugin listings.
 4. Confirm docs and changelog changes are included in the same branch.
 

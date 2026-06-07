@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 ALLOWED_INSTALLATION = {
@@ -22,6 +23,17 @@ ALLOWED_AUTHENTICATION = {
 
 def fail(message: str) -> None:
     print(f"ERROR: {message}", file=sys.stderr)
+
+
+def is_valid_git_repo_url(value: object) -> bool:
+    if not isinstance(value, str) or not value:
+        return False
+
+    parsed = urlparse(value)
+    if parsed.scheme != "https" or not parsed.netloc:
+        return False
+
+    return parsed.path.endswith(".git")
 
 
 def main() -> int:
@@ -69,15 +81,14 @@ def main() -> int:
         seen_names.add(name)
 
         source = plugin.get("source")
-        expected_path = f"./plugins/{name}"
         if not isinstance(source, dict):
             fail(f"{name}: source must be an object")
             return 1
-        if source.get("source") != "local":
-            fail(f"{name}: source.source must be 'local'")
+        if source.get("source") != "url":
+            fail(f"{name}: source.source must be 'url'")
             return 1
-        if source.get("path") != expected_path:
-            fail(f"{name}: source.path must be '{expected_path}'")
+        if not is_valid_git_repo_url(source.get("url")):
+            fail(f"{name}: source.url must be an absolute https git repository URL ending in .git")
             return 1
 
         policy = plugin.get("policy")
@@ -94,11 +105,6 @@ def main() -> int:
         category = plugin.get("category")
         if not isinstance(category, str) or not category.strip():
             fail(f"{name}: category must be a non-empty string")
-            return 1
-
-        plugin_dir = repo_root / "plugins" / name
-        if not plugin_dir.is_dir():
-            fail(f"{name}: missing plugin directory at {plugin_dir}")
             return 1
 
     print(f"Marketplace valid: {marketplace_path}")
