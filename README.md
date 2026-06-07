@@ -12,6 +12,7 @@ The marketplace starts empty on purpose:
 
 - `.agents/plugins/marketplace.json` defines the marketplace metadata and plugin catalog.
 - `docs/marketplace-architecture.md` explains how this marketplace points to plugin repos hosted elsewhere.
+- `docs/adding-a-plugin.md` explains how to add, update, and remove marketplace entries.
 - `scripts/validate_marketplace.py` validates the marketplace catalog and external source contract.
 - `.github/workflows/validate-marketplace.yml` runs the validator on pushes and pull requests.
 - `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, and `CODE_OF_CONDUCT.md` define public repo hygiene.
@@ -36,6 +37,8 @@ This repository is a catalog, not a monorepo for plugin source.
 3. Run `python3 scripts/validate_marketplace.py`.
 4. Update `CHANGELOG.md` for any user-visible repository or catalog change.
 5. Open a pull request with the relevant docs updates.
+
+For the full procedure, see `docs/adding-a-plugin.md`.
 
 ## Repository standards
 

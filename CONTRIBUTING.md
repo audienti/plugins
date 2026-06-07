@@ -19,6 +19,8 @@ This repository is a public Codex marketplace, not a dumping ground for future i
 3. Confirm there are no stale or future-facing plugin listings.
 4. Confirm docs and changelog changes are included in the same branch.
 
+Use `docs/adding-a-plugin.md` as the operational checklist for plugin additions, updates, and removals.
+
 ## Pull request expectations
 
 - Keep changes narrowly scoped.

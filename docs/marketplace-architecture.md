@@ -41,3 +41,5 @@ Future plugin entries in `.agents/plugins/marketplace.json` should follow this p
 - The repository URL should be a public `https://` Git URL ending in `.git`.
 - Do not add placeholder, speculative, or pre-announcement entries.
 - Update marketplace docs and changelog in the same pull request as the catalog change.
+
+For the operational workflow, see `docs/adding-a-plugin.md`.
