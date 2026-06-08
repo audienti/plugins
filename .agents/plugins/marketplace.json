@@ -5,10 +5,22 @@
   },
   "plugins": [
     {
+      "name": "exo",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/audienti/exo.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Business"
+    },
+    {
       "name": "signal-prospect-research",
       "source": {
         "source": "url",
-        "url": "https://github.com/omalab/signal-prospect-research.git"
+        "url": "https://github.com/audienti/signal-research.git"
       },
       "policy": {
         "installation": "AVAILABLE",

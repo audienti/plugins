@@ -2,11 +2,11 @@
 
 This repository is the public source for the `audienti` Codex marketplace catalog.
 
-The marketplace starts empty on purpose:
+The marketplace is intentionally small and catalog-only:
 
-- The catalog at `.agents/plugins/marketplace.json` is valid and public-ready.
+- The catalog at `.agents/plugins/marketplace.json` is the source of truth for published plugin listings.
 - This repository does not contain plugin implementation code.
-- `exo` is not scaffolded or listed here yet.
+- Each marketplace entry should point at a real upstream plugin repository.
 
 ## Repository layout
 
@@ -19,7 +19,12 @@ The marketplace starts empty on purpose:
 
 ## Current status
 
-There are no published plugins in this repository yet. Add plugins only when they are ready to be represented honestly in the marketplace catalog.
+The marketplace currently publishes two plugins:
+
+- `exo`, sourced from `https://github.com/audienti/exo.git`
+- `signal-prospect-research`, sourced from `https://github.com/audienti/signal-research.git`
+
+Add plugins only when they are ready to be represented honestly in the marketplace catalog.
 
 ## Architecture
 
