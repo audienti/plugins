@@ -5,8 +5,14 @@ The `audienti` marketplace repository is a catalog of plugins, not the place whe
 ## Model
 
 - This repository owns marketplace metadata and curation.
+- The repository publishes two catalogs: `.agents/plugins/marketplace.json` for Codex
+  and `.claude-plugin/marketplace.json` for Claude Code.
 - Each plugin lives in its own upstream Git repository.
-- Marketplace entries point to those repositories with `source.source: "url"` and `source.url`.
+- Codex entries point to those repositories with `source.source: "url"` and
+  `source.url`. Claude Code entries use `source.source: "github"` and `source.repo`.
+- A plugin is listed in the Claude Code catalog only when its repo contains
+  `.claude-plugin/plugin.json`. The same skill files (`skills/<name>/SKILL.md`) serve
+  both runtimes.
 - Plugin manifests, skills, hooks, MCP config, apps, assets, tests, and release work stay with the plugin repo.
 
 ## Why
@@ -41,5 +47,19 @@ Future plugin entries in `.agents/plugins/marketplace.json` should follow this p
 - The repository URL should be a public `https://` Git URL ending in `.git`.
 - Do not add placeholder, speculative, or pre-announcement entries.
 - Update marketplace docs and changelog in the same pull request as the catalog change.
+
+Claude Code entries in `.claude-plugin/marketplace.json` follow this pattern:
+
+```json
+{
+  "name": "example-plugin",
+  "source": {
+    "source": "github",
+    "repo": "example/example-plugin"
+  },
+  "description": "One-line description of what the plugin does.",
+  "category": "Productivity"
+}
+```
 
 For the operational workflow, see `docs/adding-a-plugin.md`.

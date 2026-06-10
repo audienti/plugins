@@ -1,0 +1,30 @@
+{
+  "name": "audienti",
+  "owner": {
+    "name": "Audienti",
+    "email": "wflanagan@audienti.com"
+  },
+  "metadata": {
+    "description": "Audienti plugins for go-to-market and engineering workflows."
+  },
+  "plugins": [
+    {
+      "name": "plan-loop-executor",
+      "source": {
+        "source": "github",
+        "repo": "audienti/plan-loop-executor"
+      },
+      "description": "Execute written implementation plans through a controller-owned, test-first task loop.",
+      "category": "Engineering"
+    },
+    {
+      "name": "signal-prospect-research",
+      "source": {
+        "source": "github",
+        "repo": "audienti/signal-research"
+      },
+      "description": "Turn an outbound idea into ranked target companies and likely buyers.",
+      "category": "Sales"
+    }
+  ]
+}

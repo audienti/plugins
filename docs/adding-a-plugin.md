@@ -6,7 +6,9 @@ This guide explains how to add a new plugin to the `audienti` marketplace when t
 
 This repository only owns the marketplace catalog and curation rules.
 
-- Add plugin entries to `.agents/plugins/marketplace.json`.
+- Add Codex plugin entries to `.agents/plugins/marketplace.json`.
+- Add Claude Code plugin entries to `.claude-plugin/marketplace.json` when the plugin
+  repo supports Claude Code.
 - Do not copy plugin source code into this repository.
 - Do not add speculative entries for plugins that are not ready yet.
 
@@ -19,7 +21,9 @@ Minimum bar:
 - The repository already exists and is reachable as a public `https://...git` URL.
 - The repository is the real source of truth for the plugin.
 - The plugin is installable from that repository, not just planned.
-- The repository contains the plugin manifest at `.codex-plugin/plugin.json`.
+- The repository contains the Codex plugin manifest at `.codex-plugin/plugin.json`.
+- For a Claude Code listing, the repository also contains `.claude-plugin/plugin.json`
+  with the same plugin name.
 - Manifest metadata is real, not placeholder text.
 - Any referenced skills, MCP config, app config, assets, and documentation are committed in that plugin repo.
 - The plugin name in the upstream manifest matches the marketplace entry you plan to add.
@@ -54,16 +58,42 @@ Required rules:
 - `policy.authentication` must be one of `ON_INSTALL` or `ON_USE`.
 - `category` must be a non-empty string.
 
+## Claude Code entry template
+
+If the plugin supports Claude Code, also append an entry to the `plugins` array in
+`.claude-plugin/marketplace.json`:
+
+```json
+{
+  "name": "example-plugin",
+  "source": {
+    "source": "github",
+    "repo": "example/example-plugin"
+  },
+  "description": "One-line description of what the plugin does.",
+  "category": "Productivity"
+}
+```
+
+Required rules:
+
+- `name` must match the upstream `.claude-plugin/plugin.json` name and the Codex
+  catalog entry.
+- `source.repo` must be the `owner/repo` of the same upstream repository.
+- `description` must be a non-empty string.
+- Only list plugins whose repos actually contain `.claude-plugin/plugin.json`.
+
 ## How to add a plugin
 
 1. Verify the upstream plugin repo is ready using the checklist above.
 2. Open `.agents/plugins/marketplace.json`.
 3. Append the new plugin entry to the `plugins` array.
-4. Keep the entry honest and minimal. Do not add fields that the marketplace does not use.
-5. Run `python3 scripts/validate_marketplace.py`.
-6. Update `CHANGELOG.md` with the marketplace change.
-7. If the addition changes workflow or curation rules, update `README.md` or other docs in the same branch.
-8. Open a pull request with the catalog change, docs change, and changelog entry together.
+4. If the plugin repo contains `.claude-plugin/plugin.json`, append a matching entry to `.claude-plugin/marketplace.json`.
+5. Keep entries honest and minimal. Do not add fields that the marketplaces do not use.
+6. Run `python3 scripts/validate_marketplace.py` (validates both catalogs).
+7. Update `CHANGELOG.md` with the marketplace change.
+8. If the addition changes workflow or curation rules, update `README.md` or other docs in the same branch.
+9. Open a pull request with the catalog change, docs change, and changelog entry together.
 
 ## Worked example
 
@@ -144,7 +174,7 @@ Typical reasons:
 
 Procedure:
 
-1. Edit the existing object in `.agents/plugins/marketplace.json`.
+1. Edit the existing object in `.agents/plugins/marketplace.json`, and the matching entry in `.claude-plugin/marketplace.json` if present.
 2. Confirm the new `source.url` resolves to the correct upstream repository.
 3. Run `python3 scripts/validate_marketplace.py`.
 4. Record the change in `CHANGELOG.md`.
@@ -163,7 +193,7 @@ Typical reasons:
 
 Procedure:
 
-1. Delete the plugin object from `.agents/plugins/marketplace.json`.
+1. Delete the plugin object from `.agents/plugins/marketplace.json`, and from `.claude-plugin/marketplace.json` if present.
 2. Run `python3 scripts/validate_marketplace.py`.
 3. Record the removal in `CHANGELOG.md`.
 4. Explain the removal briefly in the pull request.
@@ -177,6 +207,7 @@ Before merging a plugin catalog change, confirm all of the following:
 - The `source.url` is public, correct, and ends in `.git`.
 - The chosen `policy` values are intentional.
 - The chosen `category` is sensible and consistent.
+- If listed for Claude Code, the upstream repo contains `.claude-plugin/plugin.json` and the entry exists in `.claude-plugin/marketplace.json`.
 - `python3 scripts/validate_marketplace.py` passes.
 - `CHANGELOG.md` is updated.
 - Any related docs updates are included in the same branch.
