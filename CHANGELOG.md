@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Added the `exo` plugin to the marketplace catalog.
 - Added the `signal-prospect-research` plugin to the marketplace catalog.
+- Added the `plan-loop-executor` plugin to the marketplace catalog.
+- Added proprietary copyright and attribution license notice.
 
 ### Changed
 

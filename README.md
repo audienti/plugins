@@ -19,10 +19,11 @@ The marketplace is intentionally small and catalog-only:
 
 ## Current status
 
-The marketplace currently publishes two plugins:
+The marketplace currently publishes three plugins:
 
 - `exo`, sourced from `https://github.com/audienti/exo.git`
 - `signal-prospect-research`, sourced from `https://github.com/audienti/signal-research.git`
+- `plan-loop-executor`, sourced from `https://github.com/audienti/plan-loop-executor.git`
 
 Add plugins only when they are ready to be represented honestly in the marketplace catalog.
 
@@ -54,4 +55,10 @@ For the full procedure, see `docs/adding-a-plugin.md`.
 
 ## License
 
-This repository does not yet include a `LICENSE` file. That decision should be made explicitly by the repository owner before public publication.
+Copyright (c) 2026 OMALab, Inc. All rights reserved.
+
+This marketplace catalog is not open source. Wholesale copying, redistribution,
+resale, or publication of substantial portions requires prior written
+permission. Fair use, short quotations, references, summaries, links, and
+commentary are not limited; attribution to OMALab, Inc. and a link to this
+repository are requested when quoting or referencing the work.
