@@ -11,8 +11,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added the `exo` plugin to the marketplace catalog.
 - Added the `signal-prospect-research` plugin to the marketplace catalog.
 - Added the `plan-loop-executor` plugin to the marketplace catalog.
+- Added the `reddit-pain-finder` plugin to the marketplace catalog.
 - Added proprietary copyright and attribution license notice.
-- Added a Claude Code marketplace catalog at `.claude-plugin/marketplace.json` listing `plan-loop-executor` and `signal-prospect-research`.
+- Added a Claude Code marketplace catalog at `.claude-plugin/marketplace.json` listing `plan-loop-executor`, `signal-prospect-research`, and `reddit-pain-finder`.
 
 ### Changed
 
