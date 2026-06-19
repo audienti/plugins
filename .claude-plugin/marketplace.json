@@ -34,6 +34,15 @@
       },
       "description": "Turn an offer into pain-first Reddit queries, ranked live threads, and thread-specific reply drafts.",
       "category": "Sales"
+    },
+    {
+      "name": "sales-sheet-builder",
+      "source": {
+        "source": "github",
+        "repo": "audienti/sales-sheet-builder"
+      },
+      "description": "Build compressed, differentiated B2B sales sheets with separate internal research workbooks.",
+      "category": "Sales"
     }
   ]
 }

@@ -51,6 +51,18 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Sales"
+    },
+    {
+      "name": "sales-sheet-builder",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/audienti/sales-sheet-builder.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Sales"
     }
   ]
 }
