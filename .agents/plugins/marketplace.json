@@ -53,6 +53,30 @@
       "category": "Sales"
     },
     {
+      "name": "linkedin-pain-finder",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/audienti/linkedin-pain-finder.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Sales"
+    },
+    {
+      "name": "twitter-signal-finder",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/audienti/twitter-signal-finder.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Sales"
+    },
+    {
       "name": "sales-sheet-builder",
       "source": {
         "source": "url",

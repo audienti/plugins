@@ -19,12 +19,14 @@ The marketplace is intentionally small and catalog-only:
 
 ## Current status
 
-The marketplace currently publishes five plugins:
+The marketplace currently publishes seven plugins:
 
 - `exo`, sourced from `https://github.com/audienti/exo.git`
 - `signal-prospect-research`, sourced from `https://github.com/audienti/signal-research.git`
 - `plan-loop-executor`, sourced from `https://github.com/audienti/plan-loop-executor.git`
 - `reddit-pain-finder`, sourced from `https://github.com/audienti/reddit-pain-finder.git`
+- `linkedin-pain-finder`, sourced from `https://github.com/audienti/linkedin-pain-finder.git`
+- `twitter-signal-finder`, sourced from `https://github.com/audienti/twitter-signal-finder.git`
 - `sales-sheet-builder`, sourced from `https://github.com/audienti/sales-sheet-builder.git`
 
 Add plugins only when they are ready to be represented honestly in the marketplace catalog.

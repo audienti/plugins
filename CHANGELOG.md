@@ -12,6 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added the `signal-prospect-research` plugin to the marketplace catalog.
 - Added the `plan-loop-executor` plugin to the marketplace catalog.
 - Added the `reddit-pain-finder` plugin to the marketplace catalog.
+- Added the `linkedin-pain-finder` plugin to the marketplace catalog.
+- Added the `twitter-signal-finder` plugin to the marketplace catalog.
 - Added the `sales-sheet-builder` plugin to the Codex and Claude Code marketplace catalogs.
 - Added proprietary copyright and attribution license notice.
 - Added a Claude Code marketplace catalog at `.claude-plugin/marketplace.json` listing supported Audienti plugins.
