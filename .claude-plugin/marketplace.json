@@ -54,6 +54,33 @@
       "category": "Sales"
     },
     {
+      "name": "instagram-comment-finder",
+      "source": {
+        "source": "github",
+        "repo": "audienti/instagram-comment-finder"
+      },
+      "description": "Find real Instagram posts and comments worth engaging now for buyer signal or audience visibility.",
+      "category": "Sales"
+    },
+    {
+      "name": "facebook-comment-finder",
+      "source": {
+        "source": "github",
+        "repo": "audienti/facebook-comment-finder"
+      },
+      "description": "Find real Facebook posts and comments worth engaging now for buyer signal or audience visibility.",
+      "category": "Sales"
+    },
+    {
+      "name": "tiktok-comment-finder",
+      "source": {
+        "source": "github",
+        "repo": "audienti/tiktok-comment-finder"
+      },
+      "description": "Find real TikTok videos and comments worth engaging now for buyer signal or audience visibility.",
+      "category": "Sales"
+    },
+    {
       "name": "sales-sheet-builder",
       "source": {
         "source": "github",
