@@ -17,20 +17,64 @@ The marketplace is intentionally small and catalog-only:
 - `.github/workflows/validate-marketplace.yml` runs the validator on pushes and pull requests.
 - `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, and `CODE_OF_CONDUCT.md` define public repo hygiene.
 
+## Install
+
+Add the marketplace once, then install any plugin listed below by name.
+
+### Claude Code
+
+In a Claude Code session:
+
+```text
+/plugin marketplace add audienti/plugins
+/plugin install reddit-pain-finder@audienti
+```
+
+Or from your terminal:
+
+```bash
+claude plugin marketplace add audienti/plugins
+claude plugin install reddit-pain-finder@audienti
+```
+
+Swap `reddit-pain-finder` for any plugin name below. Run `/plugin` with no
+name to browse everything in the marketplace. If the install says to check your
+access rights, run it again with `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` set. That
+makes Claude Code download over HTTPS instead of SSH.
+
+### Codex
+
+From your terminal:
+
+```bash
+codex plugin marketplace add audienti/plugins
+codex plugin add reddit-pain-finder@audienti
+```
+
+Swap `reddit-pain-finder` for any plugin name below, or type `/plugins` inside
+Codex to browse and install from the `audienti` marketplace.
+
+Each plugin runs on your own Claude or Codex account. Some plugins work better
+with outside tools (for example Apify for live Reddit search). Each plugin's
+README lists what you'll need.
+
 ## Current status
 
-The marketplace currently publishes ten plugins:
+The marketplace publishes ten plugins for Codex. Nine of them are also listed
+for Claude Code.
 
-- `exo`, sourced from `https://github.com/audienti/exo.git`
-- `signal-prospect-research`, sourced from `https://github.com/audienti/signal-research.git`
-- `plan-loop-executor`, sourced from `https://github.com/audienti/plan-loop-executor.git`
-- `reddit-pain-finder`, sourced from `https://github.com/audienti/reddit-pain-finder.git`
-- `linkedin-pain-finder`, sourced from `https://github.com/audienti/linkedin-pain-finder.git`
-- `twitter-signal-finder`, sourced from `https://github.com/audienti/twitter-signal-finder.git`
-- `instagram-comment-finder`, sourced from `https://github.com/audienti/instagram-comment-finder.git`
-- `facebook-comment-finder`, sourced from `https://github.com/audienti/facebook-comment-finder.git`
-- `tiktok-comment-finder`, sourced from `https://github.com/audienti/tiktok-comment-finder.git`
-- `sales-sheet-builder`, sourced from `https://github.com/audienti/sales-sheet-builder.git`
+| Plugin | What it does | Source | Claude Code | Codex |
+|---|---|---|---|---|
+| `reddit-pain-finder` | Finds Reddit threads where your buyers are describing the problem you solve, and drafts a helpful reply. | [audienti/reddit-pain-finder](https://github.com/audienti/reddit-pain-finder) | Yes | Yes |
+| `signal-prospect-research` | Turns what you sell into a ranked list of companies showing the problem now, plus who to talk to at each. | [audienti/signal-research](https://github.com/audienti/signal-research) | Yes | Yes |
+| `linkedin-pain-finder` | Finds LinkedIn posts where buyers are talking about the problem, worth engaging now. | [audienti/linkedin-pain-finder](https://github.com/audienti/linkedin-pain-finder) | Yes | Yes |
+| `twitter-signal-finder` | Finds posts on X (Twitter) worth engaging now. | [audienti/twitter-signal-finder](https://github.com/audienti/twitter-signal-finder) | Yes | Yes |
+| `instagram-comment-finder` | Finds Instagram posts and comments worth engaging now. | [audienti/instagram-comment-finder](https://github.com/audienti/instagram-comment-finder) | Yes | Yes |
+| `facebook-comment-finder` | Finds Facebook posts and comments worth engaging now. | [audienti/facebook-comment-finder](https://github.com/audienti/facebook-comment-finder) | Yes | Yes |
+| `tiktok-comment-finder` | Finds TikTok videos and comments worth engaging now. | [audienti/tiktok-comment-finder](https://github.com/audienti/tiktok-comment-finder) | Yes | Yes |
+| `sales-sheet-builder` | Builds a short, clear one-page sales sheet for an offer, plus a separate research workbook. | [audienti/sales-sheet-builder](https://github.com/audienti/sales-sheet-builder) | Yes | Yes |
+| `exo` | Runs go-to-market plays from inside Codex. | [audienti/exo](https://github.com/audienti/exo) | No (the repo has no Claude Code manifest yet) | Yes |
+| `plan-loop-executor` | Works through a written build plan one tested step at a time (for engineering). | [audienti/plan-loop-executor](https://github.com/audienti/plan-loop-executor) | Yes | Yes |
 
 Add plugins only when they are ready to be represented honestly in the marketplace catalog.
 

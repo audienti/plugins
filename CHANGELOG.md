@@ -8,6 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- README: added an "Install" section with Claude Code and Codex steps, and a
+  plain one-line description of each listed plugin. `exo` stays off the Claude
+  Code list because its repo has no `.claude-plugin/plugin.json` yet.
 - Added the `exo` plugin to the marketplace catalog.
 - Added the `signal-prospect-research` plugin to the marketplace catalog.
 - Added the `plan-loop-executor` plugin to the marketplace catalog.
