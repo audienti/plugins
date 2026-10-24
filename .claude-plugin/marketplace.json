@@ -88,6 +88,15 @@
       },
       "description": "Build compressed, differentiated B2B sales sheets with separate internal research workbooks.",
       "category": "Sales"
+    },
+    {
+      "name": "development-workflow",
+      "source": {
+        "source": "github",
+        "repo": "audienti/development-workflow"
+      },
+      "description": "Understand, plan, build, prove, review and deliver work across languages and environments.",
+      "category": "Engineering"
     }
   ]
 }
