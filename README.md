@@ -67,13 +67,13 @@ for Claude Code.
 |---|---|---|---|---|
 | `reddit-pain-finder` | Finds Reddit threads where your buyers are describing the problem you solve, and drafts a helpful reply. | [audienti/reddit-pain-finder](https://github.com/audienti/reddit-pain-finder) | Yes | Yes |
 | `signal-prospect-research` | Turns what you sell into a ranked list of companies showing the problem now, plus who to talk to at each. | [audienti/signal-research](https://github.com/audienti/signal-research) | Yes | Yes |
-| `linkedin-pain-finder` | Finds LinkedIn posts where buyers are talking about the problem, worth engaging now. | [audienti/linkedin-pain-finder](https://github.com/audienti/linkedin-pain-finder) | Yes | Yes |
 | `twitter-signal-finder` | Finds posts on X (Twitter) worth engaging now. | [audienti/twitter-signal-finder](https://github.com/audienti/twitter-signal-finder) | Yes | Yes |
 | `instagram-comment-finder` | Finds Instagram posts and comments worth engaging now. | [audienti/instagram-comment-finder](https://github.com/audienti/instagram-comment-finder) | Yes | Yes |
 | `facebook-comment-finder` | Finds Facebook posts and comments worth engaging now. | [audienti/facebook-comment-finder](https://github.com/audienti/facebook-comment-finder) | Yes | Yes |
 | `tiktok-comment-finder` | Finds TikTok videos and comments worth engaging now. | [audienti/tiktok-comment-finder](https://github.com/audienti/tiktok-comment-finder) | Yes | Yes |
 | `sales-sheet-builder` | Builds a short, clear one-page sales sheet for an offer, plus a separate research workbook. | [audienti/sales-sheet-builder](https://github.com/audienti/sales-sheet-builder) | Yes | Yes |
 | `exo` | Runs go-to-market plays from inside Codex. | [audienti/exo](https://github.com/audienti/exo) | No (the repo has no Claude Code manifest yet) | Yes |
+| `development-workflow` | Guides development from problem finding through verified delivery, across languages and environments; becomes the repo default after explicit setup. | [audienti/development-workflow](https://github.com/audienti/development-workflow) | Yes | Yes |
 | `plan-loop-executor` | Works through a written build plan one tested step at a time (for engineering). | [audienti/plan-loop-executor](https://github.com/audienti/plan-loop-executor) | Yes | Yes |
 
 Add plugins only when they are ready to be represented honestly in the marketplace catalog.

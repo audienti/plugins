@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Added `development-workflow` to the Codex and Claude Code catalogs: ten portable methodology skills with explicit repository setup.
+
 - README: added an "Install" section with Claude Code and Codex steps, and a
   plain one-line description of each listed plugin. `exo` stays off the Claude
   Code list because its repo has no `.claude-plugin/plugin.json` yet.
@@ -23,6 +25,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added the `sales-sheet-builder` plugin to the Codex and Claude Code marketplace catalogs.
 - Added proprietary copyright and attribution license notice.
 - Added a Claude Code marketplace catalog at `.claude-plugin/marketplace.json` listing supported Audienti plugins.
+
+### Removed
+
+- Removed the unavailable `linkedin-pain-finder` listing from both catalogs and the current README after owner approval; its upstream returned GitHub 404.
 
 ### Changed
 
