@@ -36,15 +36,6 @@
       "category": "Sales"
     },
     {
-      "name": "linkedin-pain-finder",
-      "source": {
-        "source": "github",
-        "repo": "audienti/linkedin-pain-finder"
-      },
-      "description": "Find real LinkedIn posts worth engaging now for buyer signal or audience visibility.",
-      "category": "Sales"
-    },
-    {
       "name": "twitter-signal-finder",
       "source": {
         "source": "github",

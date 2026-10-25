@@ -26,6 +26,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added proprietary copyright and attribution license notice.
 - Added a Claude Code marketplace catalog at `.claude-plugin/marketplace.json` listing supported Audienti plugins.
 
+### Removed
+
+- Removed the unavailable `linkedin-pain-finder` listing from both catalogs and the current README after owner approval; its upstream returned GitHub 404.
+
 ### Changed
 
 - Updated the `signal-prospect-research` marketplace source URL to `https://github.com/audienti/signal-research.git`.
