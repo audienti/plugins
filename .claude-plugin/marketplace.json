@@ -88,6 +88,60 @@
       },
       "description": "Understand, plan, build, prove, review and deliver work across languages and environments.",
       "category": "Engineering"
+    },
+    {
+      "name": "topic-prospect-research",
+      "source": {
+        "source": "github",
+        "repo": "audienti/topic-research"
+      },
+      "description": "Find topic conversations and verify participating prospects against the full brief.",
+      "category": "Sales"
+    },
+    {
+      "name": "profile-audience-targeting",
+      "source": {
+        "source": "github",
+        "repo": "audienti/profile-audience-targeting"
+      },
+      "description": "Find and qualify people commenting on or reacting to seed-profile content.",
+      "category": "Sales"
+    },
+    {
+      "name": "profile-engagement-targeting",
+      "source": {
+        "source": "github",
+        "repo": "audienti/profile-engagement-targeting"
+      },
+      "description": "Find and qualify counterparties of a seed profile\u2019s outgoing engagements.",
+      "category": "Sales"
+    },
+    {
+      "name": "prospect-planning",
+      "source": {
+        "source": "github",
+        "repo": "audienti/prospect-planning"
+      },
+      "description": "Choose a grounded next prospect action for a compatible host workflow.",
+      "category": "Sales"
+    },
+    {
+      "name": "prospect-cadence",
+      "source": {
+        "source": "github",
+        "repo": "audienti/prospect-cadence"
+      },
+      "description": "Calculate cross-channel timing without selecting actions or sending outreach.",
+      "category": "Sales"
+    },
+    {
+      "name": "prospect-writing",
+      "source": {
+        "source": "github",
+        "repo": "audienti/prospect-writing"
+      },
+      "description": "Prepare evidence-grounded outreach drafts for review without sending.",
+      "category": "Sales"
     }
   ]
 }

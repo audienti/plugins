@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-29 — Prospecting skill library
+
+- Publish topic research, separate profile audience and outgoing-engagement research, planning, cadence and writing in both catalogs.
+- Each listing points to an independent public plugin repository; no research records or execution credentials are distributed.
+
+
 All notable changes to this repository will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
