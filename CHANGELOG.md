@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-29 — Enrichment and Boolean signal research
+
+- Add contact enrichment0.1.6 to both catalogs with confirmed-identity gating and honest provider-phone verification states.
+- Update the signal research description for the reviewed0.4.0 Boolean-question package.
+- Preserve all previously published catalog entries.
+
 ## 2026-10-29 — Prospecting skill library
 
 - Publish topic research, separate profile audience and outgoing-engagement research, planning, cadence and writing in both catalogs.

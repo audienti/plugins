@@ -23,7 +23,7 @@
         "source": "github",
         "repo": "audienti/signal-research"
       },
-      "description": "Turn an outbound idea into ranked target companies and likely buyers.",
+      "description": "Research scoped Boolean signals, company fit and relevant people with sourced evidence.",
       "category": "Sales"
     },
     {
@@ -141,6 +141,15 @@
         "repo": "audienti/prospect-writing"
       },
       "description": "Prepare evidence-grounded outreach drafts for review without sending.",
+      "category": "Sales"
+    },
+    {
+      "name": "prospect-contact-enrichment",
+      "source": {
+        "source": "github",
+        "repo": "audienti/prospect-contact-enrichment"
+      },
+      "description": "Research direct business contact channels with identity and verification evidence.",
       "category": "Sales"
     }
   ]
