@@ -151,6 +151,24 @@
       },
       "description": "Research direct business contact channels with identity and verification evidence.",
       "category": "Sales"
+    },
+    {
+      "name": "getting-started",
+      "source": {
+        "source": "github",
+        "repo": "audienti/getting-started"
+      },
+      "description": "Connect an agent to Audienti: report its tools, introduce it and propose a first campaign test.",
+      "category": "Sales"
+    },
+    {
+      "name": "audienti",
+      "source": {
+        "source": "github",
+        "repo": "audienti/audienti"
+      },
+      "description": "Use Audienti as the system of record: audiences, offers, campaigns, prospects and progress through the CLI, MCP or API.",
+      "category": "Sales"
     }
   ]
 }
