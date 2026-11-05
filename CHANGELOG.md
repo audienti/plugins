@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-05 — Remove exo
+
+- Remove the `exo` plugin from the Codex catalog. Exo was the first attempt to replace V10 and is no longer used; Exora replaced it.
+
 ## 2026-10-29 — Enrichment and Boolean signal research
 
 - Add contact enrichment 0.1.6 to both catalogs with confirmed-identity gating and honest provider-phone verification states.
